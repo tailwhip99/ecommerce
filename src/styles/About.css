@@ -1,0 +1,13 @@
+ .about {
+   
+    width:1fr;
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-right:10vw;
+    padding-left:10vw;
+}
+.about p {
+   background-color: rgba(218, 213, 213, 0.21);
+}

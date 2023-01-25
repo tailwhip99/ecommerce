@@ -1,0 +1,32 @@
+*{
+    margin:0;
+}
+.link {
+    color: inherit;
+    text-decoration: inherit;
+}
+.navbar {
+height:20vh;
+width:100%;
+
+background-color: white;
+display:flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+.logo {
+    color: white;
+    padding-left:20px;
+}
+.menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:150px;
+    font-size: 30px;
+
+    margin:0px 60px 0px 60px;
+    color:black;
+}

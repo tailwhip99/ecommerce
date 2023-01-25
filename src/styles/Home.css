@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+#root {
+   font-family: 'Anton', sans-serif;
+}
+link {
+ 
+}
+.home {
+
+    display:flex;
+    flex-direction: column;
+    background-image: url('../images/pexels-maria-salazar-878992.jpg');
+ 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+ gap:1vw;
+ object-fit: cover;
+  height:120vh;
+    width:100vw;
+   justify-content: center;
+   align-items: center;
+    object-fit: fill;
+ color:white;
+}
+
+.home h1 {
+   background-color: rgba(0, 0, 0, 0.26);
+   font-size: 7vw;
+   text-shadow: 0.3vh 0.5vh 0px rgba(88, 48, 0, 0.979);
+   -webkit-text-stroke: 0.5px  rgba(117, 72, 28, 0.527);
+
+}
+
+.home .btn {
+   border:0 solid black;
+  background-color: rgba(0, 0, 0, 0.499);
+  color:antiquewhite;
+   font-weight: 1000;
+   font-size: 3vw;
+   text-shadow: 3px 3px rgba(0, 0, 0, 0.819) ;
+   width:25vw;
+   height:10vh;
+   text-decoration: none;
+
+}
+
+@media (max-width:800px) {
+   .home {
+      font-size: 1.5rem;
+   }
+   .home button {
+      font-size:0.8rem;
+   }
+}
