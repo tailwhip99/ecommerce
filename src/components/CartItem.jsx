@@ -8,13 +8,24 @@ function CartItem({cartProduct,addNumber,setCartLength,cartLength}) {
     const handleChange = (e) => {
       
         const value = e.target.value;
-        if (value >= 0) {
+        currentNumber.current = number
+        const diff = value - currentNumber.current
+        if (value >= 1) {
 
- 
+      
         console.log(value)
         addNumber(id,  +value);
-           
+      
+      
+        if (currentNumber.current > 0 ) {
+        if (diff < 0 )   {
+            setCartLength(cartLength-1)
+            
+        }else {
+            setCartLength(cartLength+1) 
         }
+    }
+}
       
     };
      
@@ -31,7 +42,7 @@ function CartItem({cartProduct,addNumber,setCartLength,cartLength}) {
           }
          
           const substract = () => {
-            if (currentNumber.current > 0 || number > 0) {
+            if (currentNumber.current > 1 || number > 1) {
             currentNumber.current = number -1
             
            
