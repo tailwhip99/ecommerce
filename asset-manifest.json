@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f17d497f.css",
+    "main.js": "/static/js/main.cbc9ada5.js",
+    "static/js/787.dcc73137.chunk.js": "/static/js/787.dcc73137.chunk.js",
+    "static/media/pexels-maria-salazar-878992.jpg": "/static/media/pexels-maria-salazar-878992.0b35ab1bc1695d60bafa.jpg",
+    "index.html": "/index.html",
+    "main.f17d497f.css.map": "/static/css/main.f17d497f.css.map",
+    "main.cbc9ada5.js.map": "/static/js/main.cbc9ada5.js.map",
+    "787.dcc73137.chunk.js.map": "/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f17d497f.css",
+    "static/js/main.cbc9ada5.js"
+  ]
+}
