@@ -10,7 +10,7 @@ link {
     display:flex;
     flex-direction: column;
     background-image: url('../images/pexels-maria-salazar-878992.jpg');
- 
+  background-color: antiquewhite;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

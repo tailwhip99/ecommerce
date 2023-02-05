@@ -1,8 +1,10 @@
 import React , {useState,useRef} from "react"
 import {Link} from "react-router-dom"
 import "../styles/cartPage.css"
-function CartItem({cartProduct,addNumber,setCartLength,cartLength}) {
+function CartItem({cartProduct,addNumber,setCartLength,cartLength,displayCart}) {
     const {  id, name, prize, image, number } =cartProduct;
+    
+
     
     const currentNumber = useRef(null)
     const handleChange = (e) => {
@@ -10,14 +12,14 @@ function CartItem({cartProduct,addNumber,setCartLength,cartLength}) {
         const value = e.target.value;
         currentNumber.current = number
         const diff = value - currentNumber.current
-        if (value >= 1) {
+        if (value >= 0) {
 
       
         console.log(value)
         addNumber(id,  +value);
       
       
-        if (currentNumber.current > 0 ) {
+        if (currentNumber.current >= 0 ) {
         if (diff < 0 )   {
             setCartLength(cartLength-1)
             
@@ -42,14 +44,22 @@ function CartItem({cartProduct,addNumber,setCartLength,cartLength}) {
           }
          
           const substract = () => {
-            if (currentNumber.current > 1 || number > 1) {
+            if (number >= 1) {
             currentNumber.current = number -1
             
            
             console.log( currentNumber.current.value)
            addNumber(id,  currentNumber.current);
            setCartLength(cartLength-1)
+
+           if (currentNumber.current === 0 ) {
+            let removeItem =  displayCart.find((removeItem)=> removeItem.id === id)
+            const index = displayCart.indexOf(removeItem)
+            displayCart.splice(index,1)
+           }
+         
         }
+       
            
            }
 

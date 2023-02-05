@@ -2,6 +2,7 @@ import React , {useEffect,  useState}  from "react";
 import '../styles/Shop.css'
 import uniqid from 'uniqid'
 import Categories from "./data/Categories";
+import LazyLoad from 'react-lazy-load';
 import { Link ,  Route , Routes , useParams} from "react-router-dom"
 import Data from "./data/Data";
 import Product from "./Product"
@@ -50,7 +51,7 @@ function Shop(props){
     <div key={uniqid()}>
         
     <div className="image">
-<img alt="" src={product.image}></img>
+<LazyLoad height={240} offset={300}><img alt="" src={product.image}></img></LazyLoad>
 </div>
 <div className="productinfo">
  <h1>{product.name}</h1>

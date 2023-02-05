@@ -18,7 +18,7 @@ function CartPage({displayCart,addNumber,allPrizes,cartLength,setCartLength}) {
             <h1>Your Cart</h1>
             
             {displayCart.map((product) =>
-             <CartItem cartLength={cartLength} setCartLength={setCartLength} addNumber={addNumber} cartProduct={product}  />  
+             <CartItem displayCart={displayCart} cartLength={cartLength} setCartLength={setCartLength} addNumber={addNumber} cartProduct={product}  />  
            
            
  
