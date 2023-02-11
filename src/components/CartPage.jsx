@@ -1,14 +1,11 @@
 import React from "react";
-import Cart from './data/Cart'
+
 import "../styles/Products.css"
 import "../styles/cartPage.css"
 import CartItem from './CartItem'
 function CartPage({displayCart,addNumber,allPrizes,cartLength,setCartLength}) {
-    const closeCart = () => {
-      const cart = document.querySelector(".cart")
-      cart.style.visibility = "hidden"
-      
-    }
+    
+    
 
   
  

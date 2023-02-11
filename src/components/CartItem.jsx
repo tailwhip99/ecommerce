@@ -1,4 +1,4 @@
-import React , {useState,useRef} from "react"
+import React , {useRef} from "react"
 import {Link} from "react-router-dom"
 import "../styles/cartPage.css"
 function CartItem({cartProduct,addNumber,setCartLength,cartLength,displayCart}) {
