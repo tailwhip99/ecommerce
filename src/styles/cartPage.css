@@ -19,7 +19,7 @@
 
 
   
-.cartPage h1 {
+.cartPage .yourCart {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -59,7 +59,7 @@
 }
 
 .cart-item .prize {
-  
+
     font-size:1.5vw;
     width:100vw;
 }
@@ -79,11 +79,11 @@ button {
     align-items:center
 }
 
-.allPrizes {
+.totalPrize {
+   
     margin-top:5vw;
-    background: -webkit-linear-gradient(rgb(48, 48, 48), rgb(97, 97, 97));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
+   
 }
 
 .quantity input {

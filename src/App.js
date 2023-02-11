@@ -68,13 +68,11 @@ cartCounter.style.visibility='visible'
 
   
  totalPrice()
-displayCard()
+
  
  };
 
- function displayCard() {
-  
- }
+ 
 
 function totalPrice() {
  let sumPrizes = 0
@@ -97,8 +95,8 @@ function totalPrice() {
 <Route path="/" element={<Home />} />
 <Route  path="/shop/:parameter" element={<Shop   data={Data} />} />
 <Route path="/about" element={<About/>} />
-<Route path="/shop/products/:id" element={<Product addToCart={addToCart}    data={Data} />} />
-<Route path="/cart" element={<CartPage displayCart={Cart} addNumber={addNumber} cartLength={cartLength} setCartLength={setCartLength}   allPrizes={allPrizes}  data={Data} />}></Route>
+<Route path="/shop/products/:id" element={<Product addToCart={addToCart}     />} />
+<Route path="/cart" element={<CartPage displayCart={Cart} addNumber={addNumber} cartLength={cartLength} setCartLength={setCartLength}   allPrizes={allPrizes}   />}></Route>
    </Routes>
    </>
    

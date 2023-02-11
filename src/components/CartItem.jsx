@@ -18,7 +18,12 @@ function CartItem({cartProduct,addNumber,setCartLength,cartLength,displayCart}) 
         console.log(value)
         addNumber(id,  +value);
       
-      
+        if ((diff <0) && (currentNumber.current === 1)) {
+            let removeItem =  displayCart.find((removeItem)=> removeItem.id === id)
+            const index = displayCart.indexOf(removeItem)
+            displayCart.splice(index,1)
+            setCartLength(cartLength-1)
+           }
         if (currentNumber.current >= 0 ) {
         if (diff < 0 )   {
             setCartLength(cartLength-1)
@@ -26,9 +31,12 @@ function CartItem({cartProduct,addNumber,setCartLength,cartLength,displayCart}) 
         }else {
             setCartLength(cartLength+1) 
         }
+
+        
     }
-}
-      
+} 
+
+       
     };
      
            
