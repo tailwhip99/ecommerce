@@ -52,7 +52,7 @@
 .right-side {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    gap:3vw;
+    gap:1vw;
    padding-top:2vw;
   background-color: rgba(236, 236, 236, 0.044);
     align-items: center;
